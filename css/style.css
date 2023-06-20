@@ -190,6 +190,7 @@ button:focus {
 
 .major {
   background-color: var(--color-primary-variant);
+  width: 20rem;
   padding: 2rem 1rem;
   color: var(--color-text);
   border-radius: 1rem;
