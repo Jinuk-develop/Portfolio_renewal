@@ -440,6 +440,7 @@ button:focus {
 /* Arrow Up */
 
 .arrow-up {
+  opacity: 0;
   background-color: var(--color-primary);
   position: fixed;
   bottom: 3rem;
@@ -451,6 +452,7 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
