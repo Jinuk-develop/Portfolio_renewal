@@ -29,3 +29,15 @@ document.addEventListener('scroll', () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+// Navbar 토글버튼 만들기 ()
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+// Navbar 메뉴 클릭시 토글 자동 닫기.active
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('open');
+});
