@@ -28,7 +28,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -224,38 +225,38 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 ALL<span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="project1">
                 project1<span class="category__count">⭐</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="project2">
                 project2<span class="category__count">⭐</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="project3">
                 project3<span class="category__count">⭐</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="project4">
                 project4<span class="category__count">⭐</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="project5">
                 project5<span class="category__count">⭐</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="project1">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -268,7 +269,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="project2">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -281,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="project3">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -294,7 +295,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="project4">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project4.webp"
@@ -307,7 +308,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="project5">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project5.webp"

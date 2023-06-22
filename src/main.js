@@ -1,5 +1,6 @@
+'use strict';
 // window.document.querySelector();
-// widow - 글로벌 객체 (브라우저에서 기본적으로 제공)
+// window - 글로벌 객체 (브라우저에서 기본적으로 제공)
 
 // 스크롤시 Header에 다크 스크롤링 적용.
 const header = document.querySelector('.header');
@@ -37,7 +38,7 @@ navbarToggle.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// Navbar 메뉴 클릭시 토글 자동 닫기.active
+// Navbar 메뉴 클릭시 토글 자동 닫기
 navbarMenu.addEventListener('click', () => {
   navbarMenu.classList.remove('open');
 });
