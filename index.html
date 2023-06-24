@@ -25,18 +25,23 @@
       src="https://kit.fontawesome.com/a4ef803faa.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -64,22 +69,27 @@
     <!-- Main -->
     <main>
       <!-- Home -->
-      <section id="home" class="section">
+      <section id="home">
         <div class="home__container">
           <img
             class="home_img"
             src="images/profile.jpeg"
             alt="Jinuk's profile.jpeg"
           />
-          <h2 class="home__title">
-            Hello <br />I&#39;m
-            <strong class="home__title--strong">Software Engineer</strong>,
-            Jinuk
-          </h2>
-          <p class="home__description">
-            사람들에게 인정받는 개발자가 되겠습니다.
-          </p>
-          <a class="home__contact" href="#contact">Contact Me</a>
+          <div>
+            <h2
+              class="home__title"
+              aria-label="Hello, I&#39;m Front-end Engineer Jinuk"
+            >
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">mechanical Engineer</strong>,
+              Jinuk
+            </h2>
+            <p class="home__description">
+              사람들에게 인정받는 개발자가 되겠습니다.
+            </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
         </div>
       </section>
       <!-- About -->
@@ -423,3 +433,4 @@
     </footer>
   </body>
 </html>
+linear-gradient( 180deg, rgba(5, 10, 19, 1) 0%, rgba(10, 35, 79, 1) 100% );
